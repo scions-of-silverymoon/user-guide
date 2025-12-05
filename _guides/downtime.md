@@ -22,6 +22,86 @@ For a list of activities, see [🧯downtime-info🎻](https://discord.com/channe
 
 - `!dt help [downtime]` - and to see what features and proficiencies help in your rolls, use `!dt help features`
 
+## Downtime Activity List
+
+### Gold-Earning Downtimes
+
+These activities reward gold pieces. Activities marked with * require 2 DT and involve a save that could result in injury.
+
+| Command | Checks | Tool Proficiency Bonus | DT Cost | Risk |
+|---------|--------|------------------------|---------|------|
+| `!dt barkeep` | Sleight of Hand, Charisma, Insight | Brewer's Supplies | 1 | Safe |
+| `!dt bowyer` | Sleight of Hand, Investigation/Perception (highest), Dexterity | Woodcarver's Tools | 1 | Safe |
+| `!dt fish` | Nature, Animal Handling, Strength | Water Vehicles | 1 | Safe |
+| `!dt garden` | Investigation/Perception (highest), Nature, Wisdom | Herbalism Kit | 1 | Safe |
+| `!dt gossip` | Insight/Perception (highest), Persuasion/Intimidation (highest), Intelligence | None | 1 | Safe |
+| `!dt perform` | Insight, Performance, Persuasion | Musical Instrument | 1 | Safe |
+| `!dt research` | Investigation, Intelligence, Knowledge* | None | 1 | Safe |
+| `!dt sermon` | Religion, Wisdom, Persuasion/Performance (highest) | None | 1 | Safe |
+| `!dt shopkeep` | Perception/Insight (highest), Persuasion/Deception (highest), Charisma | None | 1 | Safe |
+| `!dt teach` | Insight, Persuasion/Performance (highest), Knowledge* | None | 1 | Safe |
+| `!dt wrangle` | Perception/Insight (highest), Animal Handling, Athletics/Acrobatics (highest) | None | 1 | Safe |
+| `!dt cook`* | Wisdom, Insight, Constitution Save | Cook's Utensils | 2 | Food poisoning |
+| `!dt farm`* | Nature, Animal Handling, Constitution Save | None | 2 | Sunburn/heatstroke |
+| `!dt guard`* | Perception, Athletics, Dexterity Save | None | 2 | Injury on patrol |
+| `!dt heal`* | Insight, Medicine, Constitution Save | None | 2 | Migraine/illness |
+| `!dt hunt`* | Athletics, Survival, Dexterity Save | None | 2 | Injury while hunting |
+| `!dt lumber`* | Athletics, Survival/Nature (highest), Strength Save | None | 2 | Logging accident |
+| `!dt smith`* | Sleight of Hand, Strength, Constitution Save | Smith's Tools | 2 | Forge burns |
+
+*Knowledge = Highest of Arcana, History, Medicine, Nature, or Religion
+
+**Risky Activities:** Activities marked with * cost 2 DT to attempt and involve a save. If you fail the save, you lose 1 additional DT due to injury/illness and must recover. You cannot attempt these if you have less than 2 DT remaining.
+
+### XP-Earning Downtimes
+
+These activities reward experience points. All XP downtimes cost 2 DT and involve a save that could result in injury.
+
+| Command | Checks | Primary Stat | DT Cost |
+|---------|--------|--------------|---------|
+| `!dt train` | Athletics, Constitution/Strength Save (highest), Weapon Attack | Strength | 2 |
+| `!dt spar` | Acrobatics/Stealth (highest), Constitution/Dexterity Save (highest), Weapon Attack | Dexterity | 2 |
+| `!dt commune` | Religion/Nature/Insight (highest), Wisdom/Charisma Save (highest), Spellcasting Attack | Wisdom | 2 |
+| `!dt practice` | Arcana, Intelligence Save, Spellcasting Attack | Intelligence | 2 |
+| `!dt charm` | Persuasion/Deception/Intimidation (highest), Wisdom/Charisma Save (highest), Spellcasting Attack | Charisma | 2 |
+
+**Note:** Even on fails, you always receive some XP or gold! Critical successes (Nat 20) give bonus rewards.
+
+### Special Downtimes
+
+| Command | Description | Cost |
+|---------|-------------|------|
+| `!dt gamble` | Roll 3d6 against the house (DC 10). Proficiency in Gaming Sets grants advantage. Costs 25gp to play, win up to 50gp. | 1 DT + 25gp |
+| `!dt learn` | Learn a new language, tool, or instrument proficiency. See section below for details. | 1 DT per attempt |
+| `!dt spell` | Copy spells into your spellbook (Wizards/Tomelocks/Ritual Caster feat only). Costs 50gp per DT. See section below for details. | 1 DT + 50gp |
+
+## Tool Proficiencies & Features
+
+### How Tool Proficiencies Help
+
+Certain downtimes benefit from tool proficiencies. To register your tools, use `!tool pro <tool name>` and check with `!tool list`.
+
+**Gaming Sets for Gambling:**
+- Dice Set, Dragonchess Set, Playing Card Set, Three-Dragon Ante Set
+- Proficiency grants advantage on gambling rolls
+- Expertise grants additional advantage (if you have Artificer 6+ or Rune Knight with Fire Rune)
+
+### Passive Features That Help
+
+Many racial, class, and item features automatically apply to downtime rolls. Run `!dt help features` to see the full list, including:
+
+**Racial Features:** Halfling Lucky, Gnome Cunning, Dwarf/Duergar Resilience, Yuan-ti Magic Resistance, and more
+
+**Class Features:**
+- Bard: Jack of All Trades, Expertise
+- Rogue: Expertise, Reliable Talent (level 11+)
+- Artificer: Tool Expertise (level 6+)
+- Monk: Purity of Body (level 10), Diamond Soul (level 14)
+- Paladin: Aura of Protection (level 6+), Divine Health (level 3)
+- And many subclass features!
+
+**Magic Items:** Belt of Dwarvenkind, Cloak of Protection, Stone of Good Luck, +1/+2/+3 Weapons/Focuses, and more
+
 ## What are Proficiencies?
 
 Learning a proficiency lets you learn a new tool, vehicle, instrument or language skill. **Only one proficiency can be learned at a time.**
@@ -32,33 +112,79 @@ The more difficult the topic is to learn, the more progress it requires to compl
 
 `!dt help learn` will show the available list of topics and progress needed.
 
+### Available to Learn
+
+**Instruments:**
+- Portable: Bagpipes, Birdpipes, Drum, Dulcimer, Flute, Glaur, Hand Drum, Horn, Hurdy Gurdy, Longhorn, Lute, Lyre, Pan Flute, Shawm, Songhorn, Tantan, Thelarr, Tocken, Viol, Wargong, Whistle-Stick, Yarting, Zulkoon
+- Non-Portable/Rare: Piano, Harpsichord, Organ, Pipe Organ, Harp
+
+**Tools:**
+Alchemist's Supplies, Brewer's Supplies, Calligrapher's Supplies, Carpenter's Tools, Cartographer's Tools, Cobbler's Tools, Cook's Utensils, Dice Set, Disguise Kit, Dragonchess Set, Forgery Kit, Glassblower's Tools, Herbalism Kit, Jeweler's Tools, Leatherworker's Tools, Mason's Tools, Navigator's Tools, Painter's Supplies, Playing Card Set, Poisoner's Kit, Potter's Tools, Smith's Tools, Thieves' Tools, Three Dragon Ante Set, Tinker's Tools, Weaver's Tools, Woodcarver's Tools, Land Vehicles, Water Vehicles, Air Vehicles
+
+**Standard Languages:**
+Common, Dwarvish, Elvish, Giant, Gnomish, Goblin, Halfling, Orc, Sign Language
+
+**Exotic Languages:**
+Abyssal, Celestial, Draconic, Deep Speech, Infernal, Kraul, Loxodon, Merfolk, Minotaur, Primordial, Quori, Riedran, Sphinx, Sylvan, Undercommon, Vedalken
+
+**Race/Class Specific (Cannot be learned):**
+Aarakocra, Druidic, Gith, Thieves' Cant
+
 ### How to Learn
 
-1. Run the command listed for chosen topic
-2. When done learning, run `!dt learn last` in [🧠learning-log📝](https://discord.com/channels/866376531995918346/881630481102303262)
-3. Update Beyond/Dicecloud sheets with new proficiency, and run `!update`
+**Learning involves:**
+- Highest of Intelligence/Wisdom check
+- Intelligence Save
+- Progress points awarded based on success (1-4 points per attempt)
 
-Proficiency can be added to vsheet by using `!manage` or `!tool`.
+**Commands:**
 
-To see the full list of what your char has learned, run `!dt learn log`
+1. **Start learning:** `!dt learn <Instrument|Tool|Language>`
+   - Example: `!dt learn Lute` or `!dt learn Elvish`
+2. **Continue learning:** `!dt learn` (no arguments needed)
+3. **Check progress:** Your progress is tracked automatically
+4. **When complete:** Run `!dt learn last` in [🧠learning-log📝](https://discord.com/channels/866376531995918346/881630481102303262)
+5. **Update sheet:** Add to Beyond/Dicecloud and run `!update`
+6. **Add to vsheet:** Use `!manage` or `!tool pro <name>` to register the proficiency
+
+**Useful Commands:**
+- `!dt learn log` - See everything you've learned
+- `!dt learn reset` - Abandon current progress and start something new (progress is lost)
 
 ## How to Copy Spells
 
 Downtime using `!dt spell` automatically removes the cost and uses time for spell copying, from spell scrolls or other players. Must be rp'd if from someone else.
 
-**1 DT = 2hrs of practice and 50gp, per RAW.**
+**1 DT = 2 hours of practice and 50gp, per RAW.**
+
+Copying time depends on spell level (higher levels take more DTs to complete).
 
 ### Who can copy spells:
 
-Wizards, Tomelocks, and those with ritual caster feat.
+Wizards, Tomelocks (Pact of the Tome Warlocks), and those with the Ritual Caster feat.
+
+### Available Spell Schools:
+
+Abjuration, Conjuration, Divination, Enchantment, Evocation, Illusion, Necromancy, Transmutation
 
 ### Process:
 
-1. Buy spell scroll from [📜shining-scroll](https://discord.com/channels/866376531995918346/880874392316420117) or copy spell from another player in RP
-2. Run `!dt spell type level` for the school of magic and spell level you are learning in [🩺downtime-log🔬](https://discord.com/channels/866376531995918346/881218238170665043)
-   - *Example: `!dt spell necromancy 2`*
-3. When done learning, run `!dt spell "spell name"` to record it into your learning log
-   - *Example: `!dt spell Wither and Bloom`*
+1. **Acquire spell source:**
+   - Buy spell scroll from [📜shining-scroll](https://discord.com/channels/866376531995918346/880874392316420117), or
+   - Copy from another player's spellbook in RP
+
+2. **Start copying:** `!dt spell <school> <level>` in [🩺downtime-log🔬](https://discord.com/channels/866376531995918346/881218238170665043)
+   - Example: `!dt spell necromancy 2` (for a 2nd-level necromancy spell)
+   - Available schools: abjuration, conjuration, divination, enchantment, evocation, illusion, necromancy, transmutation
+
+3. **Continue copying:** `!dt spell` (no arguments) until complete
+
+4. **Log the spell:** When done, run `!dt spell last <spell name>` in [🩺downtime-log🔬](https://discord.com/channels/866376531995918346/881218238170665043)
+   - Example: `!dt spell last Wither and Bloom`
+
+**Useful Commands:**
+- `!dt spell log` - See all spells you've copied
+- `!dt spell reset` - Abandon current spell (progress and gold are lost)
 
 ## How to Reset DTs: Weekly lifestyle charges
 
@@ -68,19 +194,44 @@ Lifestyle covers each character's rent/Inn charges, all meals and drinks for rol
 
 While there are no consequences or punishments to forgetting to meet your rent or forgetting to run `!week`, we ask players to not forget to do it, as it is part of the server's mechanics and activity checks.
 
+## Timezone Settings
+
+The DT system tracks your daily limit (2 per day) based on midnight in your timezone.
+
+**Default timezone:** UTC +0
+
+**Commands:**
+- `!dt timezone` - Check your current timezone setting in [🤖bot-spam](https://discord.com/channels/866376531995918346/866397299437600778)
+- `!dt timezone <number>` - Set your timezone (e.g., `!dt timezone -5` for EST, `!dt timezone +1` for CET)
+- For 30-minute offsets, use decimals (e.g., `!dt timezone -5.5`)
+- **Note:** DST must be adjusted manually
+
 ---
 
 ## Summary
 
-**How to Downtime:**
+**Core Commands:**
+- `!dt help` - List all downtime activities
+- `!dt help [downtime]` - Get details on a specific activity
+- `!dt help features` - See all racial/class features that help with rolls
+- `!dt [activity]` - Run a downtime activity (e.g., `!dt barkeep`)
 
-**What are:**
-- Downtimes - `!dt help`
-- Proficiencies - `!dt help learn`
+**Learning & Progression:**
+- `!dt learn <item>` - Start learning a proficiency
+- `!dt spell <school> <level>` - Start copying a spell
+- `!dt learn log` / `!dt spell log` - View your learning history
+- `!dt learn last` / `!dt spell last <name>` - Log completed learning
 
-**How to:**
-- Learn Proficiencies - `!dt learn`
-- Copy Spells - `!dt spell`
-- Reset Downtimes - Run `!week` in weekly-logs on Sundays
+**Settings & Management:**
+- `!dt timezone` - Check/set your timezone for daily reset
+- `!week` - Reset DTs weekly (Sundays in weekly-logs)
+- `!tool pro <name>` / `!tool list` - Register/check tool proficiencies
+
+**Key Points:**
+- 2 DT per day, 14 per week maximum
+- Risky activities (marked with *) cost 2 DT and may cause injury
+- Even failures reward some gold/XP
+- Critical successes (Nat 20) give bonus rewards
+- Tool proficiencies and class features automatically apply
 
 **If you need help, please reach out to Staff!**
