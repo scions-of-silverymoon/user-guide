@@ -3,7 +3,7 @@ layout: default
 title: User Guide - Scions of Silverymoon
 ---
 
-![Header Image](/assets/images/silverymoon_header.png)
+![Header Image](/assets/images/userguide-banner.png)
 
 # Scions of Silverymoon User Guide
 
