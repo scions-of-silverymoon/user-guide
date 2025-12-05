@@ -73,11 +73,11 @@ These activities reward experience points. All XP downtimes cost 2 DT and involv
 
 | Command | Checks | Primary Stat | DT Cost |
 |---------|--------|--------------|---------|
-| `!dt train` | Athletics, Constitution/Strength Save (highest), Weapon Attack | Strength | 2 |
-| `!dt spar` | Acrobatics/Stealth (highest), Constitution/Dexterity Save (highest), Weapon Attack | Dexterity | 2 |
-| `!dt commune` | Religion/Nature/Insight (highest), Wisdom/Charisma Save (highest), Spellcasting Attack | Wisdom | 2 |
-| `!dt practice` | Arcana, Intelligence Save, Spellcasting Attack | Intelligence | 2 |
-| `!dt charm` | Persuasion/Deception/Intimidation (highest), Wisdom/Charisma Save (highest), Spellcasting Attack | Charisma | 2 |
+| `!dt train` | Athletics, Constitution/Strength Save (highest), Weapon Attack | Strength | 1 or 2 |
+| `!dt spar` | Acrobatics/Stealth (highest), Constitution/Dexterity Save (highest), Weapon Attack | Dexterity | 1 or 2 |
+| `!dt commune` | Religion/Nature/Insight (highest), Wisdom/Charisma Save (highest), Spellcasting Attack | Wisdom | 1 or 2 |
+| `!dt practice` | Arcana, Intelligence Save, Spellcasting Attack | Intelligence | 1 or 2 |
+| `!dt charm` | Persuasion/Deception/Intimidation (highest), Wisdom/Charisma Save (highest), Spellcasting Attack | Charisma | 1 or 2 |
 
 **Note:** Even on fails, you always receive some XP or gold! Critical successes (Nat 20) give bonus rewards.
 
