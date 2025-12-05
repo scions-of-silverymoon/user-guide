@@ -11,7 +11,7 @@ Misunderstandings do happen, and communication is a priority. Please notify staf
 
 ✨ **We're all here for a good time!** ✨
 
-As stated in [Who Are We](who-are-we.html), we're looking to grow our community with people who want to be involved and interactive. Players will not be considered for games if they do not RP.
+As stated in [Who Are We](who-are-we), we're looking to grow our community with people who want to be involved and interactive. Players will not be considered for games if they do not RP.
 
 If that doesn't sound like your ideal server, we may not be a great fit for each other, and that's okay! Otherwise, welcome, new friends! Happy to have you.
 
@@ -77,7 +77,7 @@ Games, scenes, and in-betweens are not permitted to introduce or knowingly engag
 
 ---
 
-Sounding good still? Head to [Player Rules](player-rules.html) for info about how we play!
+Sounding good still? Head to [Player Rules](player-rules) for info about how we play!
 
 ## Summary
 

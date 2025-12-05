@@ -127,11 +127,11 @@ Upon approval, then you will receive the Member role, and the world will open to
 
 ### 6a. Read through the guides
 
-If you haven't already, read through [Downtime](downtime.html), [Roleplay](roleplay.html), and [Transactions](transactions.html) to understand how things are run, and how to post on the server. [Quest](quest.html) reviews game rules and conduct.
+If you haven't already, read through [Downtime](downtime), [Roleplay](roleplay), and [Transactions](transactions) to understand how things are run, and how to post on the server. [Quest](quest) reviews game rules and conduct.
 
 ### 6b. Once you're ready to begin
 
-Get to [Getting Started](get-started.html) to finalize your character. This preps you for any rolls you make, and all the commands we use in Avrae.
+Get to [Getting Started](get-started) to finalize your character. This preps you for any rolls you make, and all the commands we use in Avrae.
 
 ## 🟣 Second Character 🟣
 

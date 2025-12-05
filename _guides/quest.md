@@ -103,7 +103,7 @@ Work with your DM to discuss the storybuilding options including Reborn to bring
 
 ### Stay dead
 
-Start a new character! See the [Character Guide](character.html) for details.
+Start a new character! See the [Character Guide](character) for details.
 
 ---
 

@@ -11,7 +11,7 @@ Try to check this list before you ask questions, likely your answer could be fou
 
 ### Level? Races? XP type?
 
-See [Character Creation Guide](character.html) for creation guidelines.
+See [Character Creation Guide](character) for creation guidelines.
 
 ### Only Dicecloud? Really?
 
@@ -23,7 +23,7 @@ There are not currently portals to other planes readily available, so while your
 
 ### UA? Spelljammer?? Baldur's Gate 3??? (And other official material.)
 
-We have an extensive list of what is allowed or not in the [Character Creation Guide](character.html)!
+We have an extensive list of what is allowed or not in the [Character Creation Guide](character)!
 
 ### Would you allow re-skinned races?
 
@@ -72,7 +72,7 @@ Yes, magic items of higher quality than uncommon may be rewarded by DMs through 
 
 ### Is there a list of buy-able magic items in Silverymoon?
 
-Yes! Our item list is available in [Transactions](transactions.html).
+Yes! Our item list is available in [Transactions](transactions).
 
 ### My desired item isn't on the list. Is it buyable?
 
@@ -114,7 +114,7 @@ Yes! We love little fuzzballs (or scaly things, no judgement), and they can brin
 
 ### My character wants to own a shop, or live in a house. Is this allowed?
 
-As long as it does not significantly influence or control the environment setting (see [Player Rules](player-rules.html)), we do allow players to have some flexibility. There will be no separate channels for houses or cart-shops, these may use the flexible city flex channels in each district. There may be no actual gold exchanged- these are for RP purposes only.
+As long as it does not significantly influence or control the environment setting (see [Player Rules](player-rules)), we do allow players to have some flexibility. There will be no separate channels for houses or cart-shops, these may use the flexible city flex channels in each district. There may be no actual gold exchanged- these are for RP purposes only.
 
 ### How much leeway do we have in RPlaying our PC's \<pet, patron, god, talking sword, etc.\>?
 

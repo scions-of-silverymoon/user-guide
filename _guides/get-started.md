@@ -51,13 +51,13 @@ Add your availability for games in [🥽spectator-n-sesh](https://discord.com/ch
 
 These commands influence your downtime bonuses on the server:
 
-`!level` - Will show you how to set your level and abilities on AVRAE. More commands are in [Quickstart Commands](quickstart-commands.html).
+`!level` - Will show you how to set your level and abilities on AVRAE. More commands are in [Quickstart Commands](quickstart-commands).
 
 **Keep in mind that proper set-up and having your sheet working in Avrae is important, and not optional. Ask for help as needed, but do not skip those steps!**
 
 If you have not already:
 
-Review [Downtime](downtime.html), [Roleplay](roleplay.html), [Transactions](transactions.html) and [Quest](quest.html) before posting for games, scenes or transactions.
+Review [Downtime](downtime), [Roleplay](roleplay), [Transactions](transactions) and [Quest](quest) before posting for games, scenes or transactions.
 
 **Please remember to check pins in every channel!** These have instructions, info or helpful reminders and commands. ❤️
 

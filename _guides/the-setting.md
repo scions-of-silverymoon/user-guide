@@ -25,4 +25,4 @@ For more information on the setting and city of Silverymoon, please check out th
 
 ---
 
-Ready to join us? Head to [Getting Started](get-started.html) to begin your journey!
+Ready to join us? Head to [Getting Started](get-started) to begin your journey!

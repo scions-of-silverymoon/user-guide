@@ -19,11 +19,11 @@ New to Scions of Silverymoon? Start here!
 
 ### Essential Reading (In Order)
 
-1. **[Who Are We?](_guides/who-are-we.html)** - Learn about our community, what we offer, and character allowances
-2. **[Community Guidelines](_guides/community-guidelines.html)** - Our community rules and expectations
-3. **[Player Rules](_guides/player-rules.html)** - Roleplay and character-specific rules
-4. **[The Setting](_guides/the-setting.html)** - Learn about Silverymoon in 1490 DR
-5. **[Getting Started](_guides/get-started.html)** - Final steps to begin playing
+1. **[Who Are We?](guides/who-are-we)** - Learn about our community, what we offer, and character allowances
+2. **[Community Guidelines](guides/community-guidelines)** - Our community rules and expectations
+3. **[Player Rules](guides/player-rules)** - Roleplay and character-specific rules
+4. **[The Setting](guides/the-setting)** - Learn about Silverymoon in 1490 DR
+5. **[Getting Started](guides/get-started)** - Final steps to begin playing
 
 ---
 
@@ -31,24 +31,24 @@ New to Scions of Silverymoon? Start here!
 
 ### Character Management
 
-- **[Character Creation Guide](_guides/character.html)** - Complete guide to creating your character, including banned content, Dicecloud setup, retirement, and Level 20 rules
+- **[Character Creation Guide](guides/character)** - Complete guide to creating your character, including banned content, Dicecloud setup, retirement, and Level 20 rules
 
 ### Daily Activities
 
-- **[Downtime Activities](_guides/downtime.html)** - How to use downtimes to earn gold, XP, and learn new proficiencies
-- **[Roleplay Guide](_guides/roleplay.html)** - How to roleplay, format posts, use RPXP timers, and request NPCs
-- **[Transactions Guide](_guides/transactions.html)** - How to buy items, log gold and XP transactions
+- **[Downtime Activities](guides/downtime)** - How to use downtimes to earn gold, XP, and learn new proficiencies
+- **[Roleplay Guide](guides/roleplay)** - How to roleplay, format posts, use RPXP timers, and request NPCs
+- **[Transactions Guide](guides/transactions)** - How to buy items, log gold and XP transactions
 
 ### Playing Games
 
-- **[Quest Guide](_guides/quest.html)** - Game types, etiquette, player selection, and character death rules
+- **[Quest Guide](guides/quest)** - Game types, etiquette, player selection, and character death rules
 
 ---
 
 ## 🔧 Technical Guides
 
-- **[Quickstart Commands](_guides/quickstart-commands.html)** - Essential Avrae commands for setup and combat
-- **[FAQ](_guides/faq.html)** - Frequently asked questions organized by topic
+- **[Quickstart Commands](guides/quickstart-commands)** - Essential Avrae commands for setup and combat
+- **[FAQ](guides/faq)** - Frequently asked questions organized by topic
 
 ---
 

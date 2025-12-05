@@ -65,4 +65,4 @@ We do not tolerate OOC drama. Staff will contact any players causing strife and 
 
 Like what you've seen so far?
 
-Head to [Community Guidelines](community-guidelines.html) next! It is also where we specify our codes of conduct.
+Head to [Community Guidelines](community-guidelines) next! It is also where we specify our codes of conduct.
