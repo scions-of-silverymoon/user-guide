@@ -7,6 +7,15 @@ title: Quest Guide
 
 Game definitions, guidelines and about character death.
 
+## Table of Contents
+
+- [Quests](#quests)
+- [Game Etiquette](#game-etiquette)
+- [Player Selection](#player-selection)
+- [In-Game Character Death](#in-game-character-death)
+
+---
+
 ## Quests
 
 Games that earn XP are posted in [🤺play-by-post-games](https://discord.com/channels/866376531995918346/885162685505863701) or [🎪live-games](https://discord.com/channels/866376531995918346/885356489961775164). Click the ✅ to sign up for selection!
@@ -104,14 +113,3 @@ Work with your DM to discuss the storybuilding options including Reborn to bring
 ### Stay dead
 
 Start a new character! See the [Character Guide](character) for details.
-
----
-
-## Summary
-
-**How To: Quest!**
-
-- Quests
-- Game Etiquette
-- Player Selection
-- In-Game Character Death

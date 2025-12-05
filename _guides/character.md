@@ -7,6 +7,19 @@ title: Character Creation Guide
 
 All about characters, including how to make or transfer a new one.
 
+## Table of Contents
+
+- [Starting Character Set-Up](#starting-character-set-up)
+- [Banned Content List](#-silverymoons-banned-content-list-)
+- [Character Submission](#-character-submission-)
+- [Character Profile](#-character-profile-)
+- [Second Character](#-second-character-)
+- [Retirement or Transference](#-retirement-or-transference-)
+- [Level 20](#-level-20-)
+- [House Ruling: Ending Paladinphobia](#️-house-ruling-ending-paladinphobia-️)
+
+---
+
 ## Starting Character Set-Up
 
 - All characters start at **level 4**
@@ -194,15 +207,3 @@ While this is no problem for the majority of multiclasses, the prerequisite for 
 ---
 
 Welcome to Silverymoon! ❤️
-
-## Summary
-
-**Character Building:**
-
-- Starting Set-Up
-- Banned List
-- Character Submission
-- Character Profile and Second Character
-- Retirement or Transference
-- Level 20
-- Ending Paladinphobia

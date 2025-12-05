@@ -7,6 +7,21 @@ title: Downtime Activities
 
 What are DTs, and how to do them.
 
+## Table of Contents
+
+- [What are Downtime Activities?](#what-are-downtime-activities)
+- [Downtime Activity List](#downtime-activity-list)
+  - [Gold-Earning Downtimes](#gold-earning-downtimes)
+  - [XP-Earning Downtimes](#xp-earning-downtimes)
+  - [Special Downtimes](#special-downtimes)
+- [Tool Proficiencies & Features](#tool-proficiencies--features)
+- [What are Proficiencies?](#what-are-proficiencies)
+- [How to Copy Spells](#how-to-copy-spells)
+- [Weekly Lifestyle Reset](#how-to-reset-dts-weekly-lifestyle-charges)
+- [Timezone Settings](#timezone-settings)
+
+---
+
 ## What are Downtime Activities?
 
 Downtimes are a character's 'free time' where they can earn extra gold, XP or learn a new spell, tool, instrument or language proficiency.
@@ -205,33 +220,3 @@ The DT system tracks your daily limit (2 per day) based on midnight in your time
 - `!dt timezone <number>` - Set your timezone (e.g., `!dt timezone -5` for EST, `!dt timezone +1` for CET)
 - For 30-minute offsets, use decimals (e.g., `!dt timezone -5.5`)
 - **Note:** DST must be adjusted manually
-
----
-
-## Summary
-
-**Core Commands:**
-- `!dt help` - List all downtime activities
-- `!dt help [downtime]` - Get details on a specific activity
-- `!dt help features` - See all racial/class features that help with rolls
-- `!dt [activity]` - Run a downtime activity (e.g., `!dt barkeep`)
-
-**Learning & Progression:**
-- `!dt learn <item>` - Start learning a proficiency
-- `!dt spell <school> <level>` - Start copying a spell
-- `!dt learn log` / `!dt spell log` - View your learning history
-- `!dt learn last` / `!dt spell last <name>` - Log completed learning
-
-**Settings & Management:**
-- `!dt timezone` - Check/set your timezone for daily reset
-- `!week` - Reset DTs weekly (Sundays in weekly-logs)
-- `!tool pro <name>` / `!tool list` - Register/check tool proficiencies
-
-**Key Points:**
-- 2 DT per day, 14 per week maximum
-- Risky activities (marked with *) cost 2 DT and may cause injury
-- Even failures reward some gold/XP
-- Critical successes (Nat 20) give bonus rewards
-- Tool proficiencies and class features automatically apply
-
-**If you need help, please reach out to Staff!**

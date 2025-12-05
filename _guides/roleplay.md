@@ -7,6 +7,16 @@ title: Roleplay Guide
 
 How to roleplay, use RPXP, ping an NPC and PvP in Silverymoon.
 
+## Table of Contents
+
+- [Roleplay in Silverymoon](#roleplay-in-silverymoon)
+- [Post Format Model](#post-format-model)
+- [RPXP](#rpxp)
+- [Asking for NPC](#asking-for-npc)
+- [PvP](#pvp)
+
+---
+
 ## Roleplay in Silverymoon
 
 Roleplay can occur in solos (by yourself), with other player characters, or with NPCs played by staff, and earn XP if you run a timer while you type with others.
@@ -130,21 +140,5 @@ Check the guidelines in [🍻dream-arena-guidelines📜](https://discord.com/cha
 Anything that happens in DA does not carry over to the server canon, though you might have your character remember the occurrence in a vague dream, if you wish.
 
 ---
-
-## Summary
-
-**How to Roleplay:**
-
-**How to RP:**
-- Find partner or NPC in looking-for-rp
-- Coordinate in out-of-character; roll dice in dice-rolls
-- Use timer in roleplay-xp
-- Rules: 2/3 scene limit per character, off-limits roleplaying & NPCing
-
-**How to:**
-- Format a Post
-- Use RPXP: Commands, Asynch vs Synch
-- Ask for NPC
-- PvP
 
 **Ping Staff if you need help!**

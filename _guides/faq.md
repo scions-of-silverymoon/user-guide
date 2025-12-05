@@ -7,6 +7,17 @@ title: Frequently Asked Questions
 
 Try to check this list before you ask questions, likely your answer could be found here! ❤️
 
+## Table of Contents
+
+- [Character Creation FAQs](#character-creation-faqs)
+- [Mechanical FAQs](#mechanical-faqs)
+- [Shop FAQs](#shop-faqs)
+- [Spell FAQs](#spell-faqs)
+- [Roleplay/Quality of Life FAQs](#roleplayquality-of-life-faqs)
+- [Downtime FAQs](#downtime-faqs)
+
+---
+
 ## Character Creation FAQs
 
 ### Level? Races? XP type?
@@ -145,17 +156,5 @@ Nope. Coding for these downtimes is specific to numerical values that can be pul
 Yes, any progress counter can be changed. Let a Helper know in a chat area should you need help.
 
 ---
-
-## Summary
-
-**Frequently Asked Questions:**
-
-Summary by topic:
-- Character Creation FAQs
-- Mechanical FAQs
-- Shop FAQs
-- Spells FAQs
-- Roleplay/Quality of Life FAQs
-- Downtime FAQs
 
 **Ping Staff if you have other questions!**

@@ -85,13 +85,4 @@ You can see a full list of available tools with `!tool all`, if in doubt, and ca
 
 ---
 
-## Summary
-
-**Get Started:**
-
-- Starting Commands: Order of Commands
-- Nickname and Roles
-- Avrae Command Set-up
-- Tool Proficiencies
-
 **Ping Staff if you need help!**

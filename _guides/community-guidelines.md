@@ -15,6 +15,18 @@ As stated in [Who Are We](who-are-we), we're looking to grow our community with 
 
 If that doesn't sound like your ideal server, we may not be a great fit for each other, and that's okay! Otherwise, welcome, new friends! Happy to have you.
 
+## Table of Contents
+
+1. [Be respectful - even in conflict](#rule-1-be-respectful---even-in-conflict)
+2. [No griefing, no harassment](#rule-2-no-griefing-no-harassment)
+3. [No bigotry, racism or hate speech](#rule-3-no-bigotry-racism-or-hate-speech)
+4. [Keep content SFW](#rule-4-keep-content-sfw)
+5. [Be aware, keep communication kind](#rule-5-be-aware-keep-communication-kind)
+6. [Activity and community](#rule-6-activity-and-community)
+7. [Creative Content and AI](#rule-7-creative-content-and-ai)
+
+---
+
 ## Rule 1: Be respectful - even in conflict
 
 Everything can be resolved without causing a scene, aggression or even passive-aggressive comments. We do not tolerate drama or rudeness against staff or players; if there are issues that arise with either, Staff are present to help mediate conflict and maintain a friendly community we invest in together.
@@ -78,15 +90,3 @@ Games, scenes, and in-betweens are not permitted to introduce or knowingly engag
 ---
 
 Sounding good still? Head to [Player Rules](player-rules) for info about how we play!
-
-## Summary
-
-**Scions of Silverymoon Community Guidelines:**
-
-1. Be respectful - even in conflict
-2. No griefing, no harassment
-3. No bigotry, racism or hate speech
-4. Keep content SFW
-5. Be aware, keep communication kind
-6. Activity and community
-7. Creative Content and AI

@@ -76,15 +76,6 @@ Non-canonical combat of any kind can happen in the Dream Arena. See the Dream Ar
 
 Whether it's needing time away from the server or pausing time to tuck your kids into bed during a game, player communication is needed for everything to run smoothly. Any communication with us allows for flexibility and understanding, so we value this greatly.
 
+---
+
 Sound agreeable? Fantastic! Glance over [The Setting](the-setting) to see if it's where you want your character to play!
-
-## Summary
-
-**Scions of Silverymoon Player Rules:**
-
-1. Be conscious of setting and environment
-2. Avoid powergaming and metagaming
-3. Respect consent and autonomy
-4. Keep content SFW
-5. No lethal PVP
-6. Communication is valued above all!

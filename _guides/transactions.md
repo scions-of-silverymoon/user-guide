@@ -7,6 +7,14 @@ title: Transactions Guide
 
 How to buy items, add and remove XP and gold, and complete transaction.
 
+## Table of Contents
+
+- [Purchasing Items](#-purchasing-items-)
+- [Where to Purchase](#-where-to-purchase-)
+- [Logging XP and Gold](#-logging-xp-and-gold-)
+
+---
+
 ## 🔺 Purchasing Items 🔺
 
 ### Mundane Items
@@ -62,14 +70,3 @@ This command needs currency (i.e. gp), and explanation to work.
 ```
 
 *Example:* `!xp 560 RPXP`
-
----
-
-## Summary
-
-**Transactions, XP and Gold:**
-
-- Purchasing Mundane Items
-- Purchasing Magical Items
-- Where to Purchase
-- Logging XP and Gold
