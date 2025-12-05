@@ -67,7 +67,7 @@ If you can't find what you're looking for:
 
 1. Check the **[FAQ](_guides/faq.html)** - Most common questions are answered there
 2. Use the search function at the top of this page
-3. Ask in the **questions-for-the-staff** channel on Discord
+3. Ask in the [❓questions-for-the-staff👋](https://discord.com/channels/866376531995918346/866503846204276746)channel on Discord
 4. Ping a **@Helper** or **@Staff** member on the server
 
 ---
