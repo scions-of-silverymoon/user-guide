@@ -54,14 +54,6 @@ New to Scions of Silverymoon? Start here!
 
 ## 📚 Additional Resources
 
-### Quick Links
-
-- **[Channel Index](channel-index.html)** - Direct links to all Discord channels
-- **[Contributing Guidelines](CONTRIBUTING.html)** - How to contribute to this guide
-- **[Setup Information](SETUP.html)** - Technical setup for the guide website
-
-### External Resources
-
 - [Luruar on Forgotten Realms Wiki](https://forgottenrealms.fandom.com/wiki/Luruar) - Official lore about the setting
 - [D&D Beyond](https://www.dndbeyond.com/) - Character sheets and rules reference
 - [Dicecloud v2](https://dicecloud.com/) - Our primary character sheet platform
