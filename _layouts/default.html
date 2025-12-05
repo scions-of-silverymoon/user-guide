@@ -7,6 +7,8 @@
   <title>{{ page.title | default: site.title }}</title>
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
+  <!-- Theme toggle script - loaded early to prevent flash -->
+  <script src="{{ '/assets/theme-toggle.js' | relative_url }}"></script>
 </head>
 <body>
   <header class="page-header" role="banner">
@@ -17,6 +19,9 @@
       {% if site.description %}
       <h2 class="project-tagline">{{ site.description }}</h2>
       {% endif %}
+      <button id="theme-toggle-btn" class="theme-toggle" aria-label="Toggle dark mode">
+        <span class="theme-icon">🌙</span>
+      </button>
     </div>
   </header>
 
