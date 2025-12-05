@@ -56,14 +56,13 @@ These activities reward gold pieces. Activities marked with * require 2 DT and i
 | `!dt shopkeep` | Perception/Insight (highest), Persuasion/Deception (highest), Charisma | None | 1 | Safe |
 | `!dt teach` | Insight, Persuasion/Performance (highest), Knowledge* | None | 1 | Safe |
 | `!dt wrangle` | Perception/Insight (highest), Animal Handling, Athletics/Acrobatics (highest) | None | 1 | Safe |
-| `!dt cook`* | Wisdom, Insight, Constitution Save | Cook's Utensils | 2 | Food poisoning |
-| `!dt farm`* | Nature, Animal Handling, Constitution Save | None | 2 | Sunburn/heatstroke |
-| `!dt guard`* | Perception, Athletics, Dexterity Save | None | 2 | Injury on patrol |
-| `!dt heal`* | Insight, Medicine, Constitution Save | None | 2 | Migraine/illness |
-| `!dt hunt`* | Athletics, Survival, Dexterity Save | None | 2 | Injury while hunting |
-| `!dt lumber`* | Athletics, Survival/Nature (highest), Strength Save | None | 2 | Logging accident |
-| `!dt smith`* | Sleight of Hand, Strength, Constitution Save | Smith's Tools | 2 | Forge burns |
-
+| `!dt cook` | Wisdom, Insight, Constitution Save | Cook's Utensils | 1 or 2 | Food poisoning |
+| `!dt farm` | Nature, Animal Handling, Constitution Save | None | 1 or 2 | Sunburn/heatstroke |
+| `!dt guard` | Perception, Athletics, Dexterity Save | None | 1 or 2 | Injury on patrol |
+| `!dt heal` | Insight, Medicine, Constitution Save | None | 1 or 2 | Migraine/illness |
+| `!dt hunt` | Athletics, Survival, Dexterity Save | None | 1 or 2 | Injury while hunting |
+| `!dt lumber` | Athletics, Survival/Nature (highest), Strength Save | None | 1 or 2 | Logging accident |
+| `!dt smith` | Sleight of Hand, Strength, Constitution Save | Smith's Tools | 1 or 2 | Forge burns |
 *Knowledge = Highest of Arcana, History, Medicine, Nature, or Religion
 
 **Risky Activities:** Activities marked with * cost 2 DT to attempt and involve a save. If you fail the save, you lose 1 additional DT due to injury/illness and must recover. You cannot attempt these if you have less than 2 DT remaining.
