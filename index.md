@@ -5,8 +5,6 @@ title: User Guide - Scions of Silverymoon
 
 ![Header Image](/assets/images/userguide-banner.png)
 
-# Scions of Silverymoon User Guide
-
 Welcome to the Scions of Silverymoon User Guide!
 
 This guide provides comprehensive information for players and members of the Scions of Silverymoon Discord server - a Play-by-Post D&D & Roleplay Community.
