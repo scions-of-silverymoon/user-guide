@@ -1,0 +1,41 @@
+# Jekyll configuration for GitHub Pages
+title: User Guide for the Scions of Silverymoon
+description: ""
+baseurl: "/user-guide"
+url: "https://scions-of-silverymoon.github.io"
+
+# Build settings
+theme: jekyll-theme-cayman
+markdown: kramdown
+highlighter: rouge
+
+# Exclude from processing
+exclude:
+  - README.md
+  - LICENSE
+  - CONTRIBUTING.md
+  - vendor/
+  - .bundle/
+  - Gemfile
+  - Gemfile.lock
+
+# Repository settings (for GitHub Pages)
+repository: scions-of-silverymoon/user-guide
+
+# Collections
+collections:
+  guides:
+    output: true
+    permalink: /:collection/:name
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "guides"
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
