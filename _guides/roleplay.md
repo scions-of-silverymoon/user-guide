@@ -61,7 +61,7 @@ Like this - *italic text*
 
 ### Hidden/other language
 
-"Like this" [Abyssal] - ||"Spoiler text"|| [Language name]
+"Like this" [Abyssal] - `||"Spoiler text"||` [Language name]
 
 ---
 
@@ -71,7 +71,7 @@ Like this - *italic text*
 
 *A halfling woman dances into the scene, smiling at the reading audience. She waves.* "Hello! Welcome to Silverymoon. Would you like some fresh bread and jams?"
 
-*Her familiar imp sits upon her shoulder, chiding her.* ||"Stop trying to break the fourth wall."|| [Infernal]
+*Her familiar imp sits upon her shoulder, chiding her.* `||"Stop trying to break the fourth wall."||` [Infernal]
 
 *The two leave the way they came with a wave and a swish of the tail.*
 
