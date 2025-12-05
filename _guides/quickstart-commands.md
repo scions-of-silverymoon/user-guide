@@ -61,7 +61,9 @@ Ping a helper if you have any questions, we'll try to help as best we can!
 
 # Basic Combat
 
-## ⊹˚₊‧───────────── Prepare for Combat ─────────────‧₊˚⊹
+---
+
+## Prepare for Combat
 
 DMs may ask for these prior to game start:
 
@@ -73,7 +75,7 @@ DMs may ask for these prior to game start:
 
 ---
 
-## ⊹˚₊‧───────────── Rolls and Checks ─────────────‧₊˚⊹
+## Rolls and Checks
 
 ### Roll Skill Check:
 ```
@@ -101,7 +103,7 @@ Add modifier as `!r die+mod`
 
 ---
 
-## ⊹˚₊‧───────────── Basic Commands in Combat ─────────────‧₊˚⊹
+## Basic Commands in Combat
 
 ### Join Initiative:
 ```
@@ -171,7 +173,7 @@ Adds the dodge effect to user (*does not apply disadvantage automatically*)
 
 ---
 
-## ⊹˚₊‧───────────── Arguments and Adjustments ─────────────‧₊˚⊹
+## Arguments and Adjustments
 
 ### Adding advantage/disadvantage:
 ```
