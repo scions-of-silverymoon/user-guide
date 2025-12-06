@@ -41,7 +41,7 @@ For a list of activities, see [🧯downtime-info🎻](https://discord.com/channe
 
 ### Gold-Earning Downtimes
 
-These activities reward gold pieces. Activities marked with * require 2 DT and involve a save that could result in injury.
+These activities reward gold pieces. 
 
 | Command | Checks | Tool Proficiency Bonus | DT Cost | Risk |
 |---------|--------|------------------------|---------|------|
@@ -66,11 +66,11 @@ These activities reward gold pieces. Activities marked with * require 2 DT and i
 
 \*Knowledge = Highest of Arcana, History, Medicine, Nature, or Religion
 
-**Risky Activities:** Activities marked with * cost 2 DT to attempt and involve a save. If you fail the save, you lose 1 additional DT due to injury/illness and must recover. You cannot attempt these if you have less than 2 DT remaining.
+**Risky Activities:** Activities marked with * are risky: they normally cost the listed DT to attempt (usually 1), but you must have at least 2 DT available before starting them because failing the associated save can cause an additional DT loss (due to injury or illness), increasing the total cost to 2 DT for that attempt. The attempt itself will not consume more than 2 DT.
 
 ### XP-Earning Downtimes
 
-These activities reward experience points. All XP downtimes cost 2 DT and involve a save that could result in injury.
+These activities reward experience points. All XP downtimes are considered 'risky', as above.
 
 | Command | Checks | Primary Stat | DT Cost |
 |---------|--------|--------------|---------|
