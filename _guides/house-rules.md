@@ -31,7 +31,7 @@ On this server, Paladin's multiclassing requirements can be assumed to be:
 - Str or Dex 13
 - Cha 13
 
-### Wizards
+### Wizards
 
 **Shared Spellbooks**
 
