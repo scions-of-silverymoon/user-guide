@@ -16,7 +16,7 @@ All about characters, including how to make or transfer a new one.
 - [Second Character](#-second-character-)
 - [Retirement or Transference](#-retirement-or-transference-)
 - [Level 20](#-level-20-)
-- [House Ruling: Ending Paladinphobia](#️-house-ruling-ending-paladinphobia-️)
+- [House Rules]({{ '/guides/house-rules.html' | relative_url }})
 
 ---
 
@@ -196,14 +196,8 @@ The Level 20 character is eligible to participate in lower-level games as a came
 
 Once or twice per year, as time and character quantity permits, Level 20 characters will be able to participate in games exclusive to Level 20s, if there are DMs willing to run those games.
 
-## 🛡️ House Ruling: Ending Paladinphobia 🛡️
+## 🛡️ House Rulings
 
-In RAW, to multiclass a character must meet the prerequisites for both their starting class and the class they wish to take on (i.e., a monk wishing to multiclass into barbarian must have both STR 13 for the barbarian prereq and DEX 13 as a monk).
-
-While this is no problem for the majority of multiclasses, the prerequisite for a paladin is STR 13 and CHA 13. We believe this places an undue burden on our favorite divine smiters, particularly those who opt for a more dexterous build, whereas a similar class like Fighter gets to choose STR or DEX.
-
-**Therefore, for paladins wishing to multiclass, we are ruling that your character may have either STR 13 or DEX 13 to meet this requirement.**
-
----
+We maintain a dedicated House Rules page for rulings and clarifications. See [House Rules]({{ '/guides/house-rules.html' | relative_url }}) for the paladin multiclassing ruling and other clarifications (including Druid wildshape rulings).
 
 Welcome to Silverymoon! ❤️

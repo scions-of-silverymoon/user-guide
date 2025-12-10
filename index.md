@@ -30,6 +30,7 @@ New to Scions of Silverymoon? Start here!
 ### Character Management
 
 - **[Character Creation Guide](guides/character)** - Complete guide to creating your character, including banned content, Dicecloud setup, retirement, and Level 20 rules
+- **[House Rules](guides/house-rules.md)** - Specific rulings and alterations from the D&D Rules As Written
 
 ### Daily Activities
 
