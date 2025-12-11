@@ -30,6 +30,7 @@ New to Scions of Silverymoon? Start here!
 ### Character Management
 
 - **[Character Creation Guide](guides/character)** - Complete guide to creating your character, including banned content, Dicecloud setup, retirement, and Level 20 rules
+- **[House Rules](guides/house-rules)** - Specific rulings and alterations from the D&D Rules As Written
 
 ### Daily Activities
 
@@ -68,29 +69,6 @@ If you can't find what you're looking for:
 3. Ask in the [❓questions-for-the-staff👋](https://discord.com/channels/866376531995918346/866503846204276746)channel on Discord
 4. Ping a **@Helper** or **@Staff** member on the server
 
----
-
-## 📋 Guide Categories
-
-### New Player Path
-Follow this order for the smoothest onboarding experience:
-
-1. [Who Are We?](_guides/who-are-we.html)
-2. [Community Guidelines](_guides/community-guidelines.html)
-3. [Player Rules](_guides/player-rules.html)
-4. [The Setting](_guides/the-setting.html)
-5. [Character Creation](_guides/character.html)
-6. [Getting Started](_guides/get-started.html)
-7. [Quickstart Commands](_guides/quickstart-commands.html)
-
-### Reference Guides
-Once you're playing, refer to these as needed:
-
-- [Downtime Activities](_guides/downtime.html)
-- [Roleplay Guide](_guides/roleplay.html)
-- [Transactions Guide](_guides/transactions.html)
-- [Quest Guide](_guides/quest.html)
-- [FAQ](_guides/faq.html)
 
 ---
 
