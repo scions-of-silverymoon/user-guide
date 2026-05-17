@@ -268,11 +268,19 @@
       if (pdfDoc) renderAllPages();
     });
 
-    // Re-fit to width when the window is resized (e.g. orientation change on mobile)
+    // Re-render only when the width changes (not height — mobile browser chrome
+    // shows/hides on scroll, firing resize events that only affect height).
+    let lastRenderWidth = container.clientWidth;
     let resizeTimer;
     window.addEventListener('resize', () => {
       clearTimeout(resizeTimer);
-      resizeTimer = setTimeout(() => { if (pdfDoc) renderAllPages(); }, 300);
+      resizeTimer = setTimeout(() => {
+        const newWidth = container.clientWidth;
+        if (pdfDoc && newWidth !== lastRenderWidth) {
+          lastRenderWidth = newWidth;
+          renderAllPages();
+        }
+      }, 300);
     });
   </script>
 </body>
