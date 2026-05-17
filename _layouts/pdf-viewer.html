@@ -9,7 +9,6 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     html, body {
-      height: 100%;
       background: #525659;
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
       color: #fff;
@@ -26,7 +25,6 @@
       padding: 8px 16px;
       background: #383838;
       box-shadow: 0 2px 6px rgba(0,0,0,0.5);
-      flex-wrap: wrap;
     }
 
     #toolbar button {
@@ -43,56 +41,100 @@
     #toolbar button:hover:not(:disabled) { background: #5e5e5e; }
     #toolbar button:disabled { opacity: 0.35; cursor: default; }
 
-    #page-info {
-      font-size: 14px;
-      min-width: 90px;
-      text-align: center;
-      white-space: nowrap;
-    }
-
     #zoom-level {
       font-size: 14px;
       min-width: 50px;
       text-align: center;
     }
 
-    .toolbar-divider {
-      width: 1px;
-      height: 22px;
-      background: #666;
-      flex-shrink: 0;
+    #progress-bar-wrap {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: rgba(255,255,255,0.15);
+      z-index: 100;
     }
 
-    #canvas-container {
+    #progress-bar {
+      height: 100%;
+      background: #7eb8f7;
+      width: 0%;
+      transition: width 0.2s ease;
+    }
+
+    #pages-container {
       display: flex;
-      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
       padding: 24px 16px;
-      min-height: calc(100vh - 52px);
     }
 
-    #pdf-canvas {
+    .page-wrapper {
+      position: relative;
+      flex-shrink: 0;
       box-shadow: 0 4px 20px rgba(0,0,0,0.6);
-      max-width: 100%;
-      height: auto;
+      line-height: 0; /* prevent gap under canvas */
     }
 
-    #loading {
+    .page-wrapper canvas {
+      display: block;
+    }
+
+    /* Text layer: invisible to the eye, searchable and selectable by the browser */
+    .textLayer {
+      position: absolute;
+      inset: 0;
+      overflow: clip;
+      line-height: 1;
+      -webkit-user-select: text;
+      user-select: text;
+    }
+
+    .textLayer span,
+    .textLayer br {
+      color: transparent;
+      position: absolute;
+      white-space: pre;
+      cursor: text;
+      transform-origin: 0% 0%;
+    }
+
+    .textLayer ::selection {
+      background: rgba(0, 100, 255, 0.3);
+      color: transparent;
+    }
+
+    /* Browser find-in-page highlight */
+    .textLayer ::-webkit-search-decoration,
+    .textLayer mark {
+      background: rgba(255, 200, 0, 0.5);
+      color: transparent;
+    }
+
+    #loading-overlay {
       position: fixed;
       inset: 0;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      gap: 12px;
+      gap: 14px;
       background: #525659;
-      font-size: 17px;
-      z-index: 100;
+      font-size: 16px;
+      z-index: 50;
+      transition: opacity 0.3s;
+    }
+
+    #loading-overlay.done {
+      opacity: 0;
+      pointer-events: none;
     }
 
     #error-msg {
-      display: none;
       position: fixed;
       inset: 0;
+      display: none;
       align-items: center;
       justify-content: center;
       background: #525659;
@@ -106,104 +148,101 @@
 </head>
 <body>
 
-  <div id="loading">Loading document…</div>
+  <div id="progress-bar-wrap"><div id="progress-bar"></div></div>
+  <div id="loading-overlay"><span id="loading-text">Loading document…</span></div>
   <div id="error-msg"></div>
 
   <div id="toolbar">
-    <button id="btn-prev">&larr; Prev</button>
-    <span id="page-info">— / —</span>
-    <button id="btn-next">Next &rarr;</button>
-    <span class="toolbar-divider"></span>
     <button id="btn-zoom-out" aria-label="Zoom out">&#8722;</button>
-    <span id="zoom-level">150%</span>
+    <span id="zoom-level">100%</span>
     <button id="btn-zoom-in" aria-label="Zoom in">&#43;</button>
   </div>
 
-  <div id="canvas-container">
-    <canvas id="pdf-canvas"></canvas>
-  </div>
+  <div id="pages-container"></div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
   <script>
     pdfjsLib.GlobalWorkerOptions.workerSrc =
       'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
 
-    const pdfUrl = '{{ page.pdf | relative_url }}';
-    const canvas  = document.getElementById('pdf-canvas');
-    const ctx     = canvas.getContext('2d');
+    const pdfUrl   = '{{ page.pdf | relative_url }}';
+    const container = document.getElementById('pages-container');
+    const progressBar = document.getElementById('progress-bar');
 
-    let pdfDoc      = null;
-    let currentPage = 1;
-    let scale       = 1.5;
-    let renderTask  = null;
+    let pdfDoc = null;
+    let scale  = 1.2;
 
-    function updateToolbar() {
-      document.getElementById('page-info').textContent =
-        `${currentPage} / ${pdfDoc.numPages}`;
-      document.getElementById('btn-prev').disabled = currentPage <= 1;
-      document.getElementById('btn-next').disabled = currentPage >= pdfDoc.numPages;
-      document.getElementById('zoom-level').textContent =
-        `${Math.round(scale * 100)}%`;
+    function setProgress(n, total) {
+      progressBar.style.width = `${Math.round((n / total) * 100)}%`;
     }
 
-    async function renderPage(num) {
-      if (renderTask) {
-        try { renderTask.cancel(); } catch (_) {}
+    async function renderAllPages() {
+      container.innerHTML = '';
+
+      for (let i = 1; i <= pdfDoc.numPages; i++) {
+        document.getElementById('loading-text').textContent =
+          `Rendering page ${i} of ${pdfDoc.numPages}…`;
+        setProgress(i, pdfDoc.numPages);
+
+        const page     = await pdfDoc.getPage(i);
+        const viewport = page.getViewport({ scale });
+
+        const wrapper = document.createElement('div');
+        wrapper.className = 'page-wrapper';
+        wrapper.style.width  = viewport.width  + 'px';
+        wrapper.style.height = viewport.height + 'px';
+
+        // Canvas layer
+        const canvas  = document.createElement('canvas');
+        canvas.width  = viewport.width;
+        canvas.height = viewport.height;
+        wrapper.appendChild(canvas);
+        container.appendChild(wrapper);
+
+        // Render canvas (await so pages appear in order)
+        await page.render({ canvasContext: canvas.getContext('2d'), viewport }).promise;
+
+        // Text layer (enables Ctrl+F and text selection)
+        const textContent  = await page.getTextContent();
+        const textLayerDiv = document.createElement('div');
+        textLayerDiv.className = 'textLayer';
+        wrapper.appendChild(textLayerDiv);
+        pdfjsLib.renderTextLayer({
+          textContentSource: textContent,
+          container: textLayerDiv,
+          viewport: viewport,
+          textDivs: [],
+        });
       }
-      const page     = await pdfDoc.getPage(num);
-      const viewport = page.getViewport({ scale });
-      canvas.width   = viewport.width;
-      canvas.height  = viewport.height;
-      renderTask = page.render({ canvasContext: ctx, viewport });
-      try {
-        await renderTask.promise;
-      } catch (e) {
-        if (e.name !== 'RenderingCancelledException') throw e;
-        return;
-      }
-      updateToolbar();
-      document.getElementById('canvas-container').scrollTop = 0;
-      window.scrollTo({ top: 0 });
+
+      progressBar.style.width = '100%';
+      const overlay = document.getElementById('loading-overlay');
+      overlay.classList.add('done');
+      setTimeout(() => overlay.remove(), 400);
     }
 
     pdfjsLib.getDocument(pdfUrl).promise
       .then(doc => {
         pdfDoc = doc;
-        document.getElementById('loading').style.display = 'none';
-        renderPage(currentPage);
+        renderAllPages();
       })
       .catch(err => {
         const el = document.getElementById('error-msg');
         el.textContent = 'Could not load document: ' + err.message;
         el.style.display = 'flex';
-        document.getElementById('loading').style.display = 'none';
+        document.getElementById('loading-overlay').style.display = 'none';
       });
 
-    document.getElementById('btn-prev').addEventListener('click', () => {
-      if (currentPage > 1) renderPage(--currentPage);
-    });
-
-    document.getElementById('btn-next').addEventListener('click', () => {
-      if (pdfDoc && currentPage < pdfDoc.numPages) renderPage(++currentPage);
-    });
-
     document.getElementById('btn-zoom-in').addEventListener('click', () => {
-      scale = Math.min(scale + 0.25, 3.0);
-      renderPage(currentPage);
+      scale = Math.min(scale + 0.2, 3.0);
+      document.getElementById('zoom-level').textContent = `${Math.round(scale * 100)}%`;
+      if (pdfDoc) renderAllPages();
     });
 
     document.getElementById('btn-zoom-out').addEventListener('click', () => {
-      scale = Math.max(scale - 0.25, 0.5);
-      renderPage(currentPage);
-    });
-
-    document.addEventListener('keydown', e => {
-      if (!pdfDoc) return;
-      if (e.key === 'ArrowRight' || e.key === 'ArrowDown' || e.key === 'PageDown') {
-        if (currentPage < pdfDoc.numPages) renderPage(++currentPage);
-      } else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp' || e.key === 'PageUp') {
-        if (currentPage > 1) renderPage(--currentPage);
-      }
+      scale = Math.max(scale - 0.2, 0.4);
+      document.getElementById('zoom-level').textContent = `${Math.round(scale * 100)}%`;
+      if (pdfDoc) renderAllPages();
     });
   </script>
 </body>
