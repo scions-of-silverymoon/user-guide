@@ -169,40 +169,63 @@
     const container = document.getElementById('pages-container');
     const progressBar = document.getElementById('progress-bar');
 
-    let pdfDoc = null;
-    let scale  = 1.2;
+    let pdfDoc     = null;
+    let zoomFactor = 1.0; // relative to auto fit-width scale
+
+    const dpr = window.devicePixelRatio || 1;
 
     function setProgress(n, total) {
       progressBar.style.width = `${Math.round((n / total) * 100)}%`;
     }
 
+    // Compute a scale that fits the page width to the available container width.
+    async function computeBaseScale() {
+      const page         = await pdfDoc.getPage(1);
+      const naturalWidth = page.getViewport({ scale: 1 }).width;
+      const available    = container.clientWidth - 32; // 32px total side padding
+      return Math.max(available / naturalWidth, 0.4);
+    }
+
     async function renderAllPages() {
       container.innerHTML = '';
 
+      const baseScale = await computeBaseScale();
+      const scale     = baseScale * zoomFactor;
+
+      document.getElementById('zoom-level').textContent =
+        `${Math.round(zoomFactor * 100)}%`;
+
       for (let i = 1; i <= pdfDoc.numPages; i++) {
-        document.getElementById('loading-text').textContent =
+        const loadingText = document.getElementById('loading-text');
+        if (loadingText) loadingText.textContent =
           `Rendering page ${i} of ${pdfDoc.numPages}…`;
         setProgress(i, pdfDoc.numPages);
 
-        const page     = await pdfDoc.getPage(i);
-        const viewport = page.getViewport({ scale });
+        const page = await pdfDoc.getPage(i);
+
+        // Render at device resolution for sharp text on retina/HiDPI screens
+        const viewport    = page.getViewport({ scale: scale * dpr });
+        const cssWidth    = viewport.width  / dpr;
+        const cssHeight   = viewport.height / dpr;
 
         const wrapper = document.createElement('div');
-        wrapper.className = 'page-wrapper';
-        wrapper.style.width  = viewport.width  + 'px';
-        wrapper.style.height = viewport.height + 'px';
+        wrapper.className   = 'page-wrapper';
+        wrapper.style.width  = cssWidth  + 'px';
+        wrapper.style.height = cssHeight + 'px';
 
-        // Canvas layer
-        const canvas  = document.createElement('canvas');
-        canvas.width  = viewport.width;
-        canvas.height = viewport.height;
+        // Canvas layer — native resolution, scaled down via CSS
+        const canvas        = document.createElement('canvas');
+        canvas.width        = viewport.width;
+        canvas.height       = viewport.height;
+        canvas.style.width  = cssWidth  + 'px';
+        canvas.style.height = cssHeight + 'px';
         wrapper.appendChild(canvas);
         container.appendChild(wrapper);
 
-        // Render canvas (await so pages appear in order)
         await page.render({ canvasContext: canvas.getContext('2d'), viewport }).promise;
 
-        // Text layer (enables Ctrl+F and text selection)
+        // Text layer — positioned in CSS pixels so Ctrl+F and selection work
+        const textViewport = page.getViewport({ scale });
         const textContent  = await page.getTextContent();
         const textLayerDiv = document.createElement('div');
         textLayerDiv.className = 'textLayer';
@@ -210,15 +233,17 @@
         pdfjsLib.renderTextLayer({
           textContentSource: textContent,
           container: textLayerDiv,
-          viewport: viewport,
+          viewport: textViewport,
           textDivs: [],
         });
       }
 
       progressBar.style.width = '100%';
       const overlay = document.getElementById('loading-overlay');
-      overlay.classList.add('done');
-      setTimeout(() => overlay.remove(), 400);
+      if (overlay) {
+        overlay.classList.add('done');
+        setTimeout(() => overlay.remove(), 400);
+      }
     }
 
     pdfjsLib.getDocument(pdfUrl).promise
@@ -234,15 +259,20 @@
       });
 
     document.getElementById('btn-zoom-in').addEventListener('click', () => {
-      scale = Math.min(scale + 0.2, 3.0);
-      document.getElementById('zoom-level').textContent = `${Math.round(scale * 100)}%`;
+      zoomFactor = Math.min(zoomFactor + 0.2, 3.0);
       if (pdfDoc) renderAllPages();
     });
 
     document.getElementById('btn-zoom-out').addEventListener('click', () => {
-      scale = Math.max(scale - 0.2, 0.4);
-      document.getElementById('zoom-level').textContent = `${Math.round(scale * 100)}%`;
+      zoomFactor = Math.max(zoomFactor - 0.2, 0.4);
       if (pdfDoc) renderAllPages();
+    });
+
+    // Re-fit to width when the window is resized (e.g. orientation change on mobile)
+    let resizeTimer;
+    window.addEventListener('resize', () => {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(() => { if (pdfDoc) renderAllPages(); }, 300);
     });
   </script>
 </body>
